@@ -3,4 +3,7 @@
 
 `npm install`
 <br/> `npm start`
-<br/><br/> Pensez à bien raccorder votre BD
+<br/><br/>  `npm test`  
+
+
+Faire passer les tests 
