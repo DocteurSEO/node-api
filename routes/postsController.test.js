@@ -25,10 +25,29 @@ describe("Test the root path", () => {
   });
   
 
+
+
+
+
+
 })
 
 
-test("", done => {
+test('responds with json', function(done) {
+  request(app)
+    .post('/api/add')
+    .send({num: '1'})
+    .set('Accept', 'application/json')
+    .then(response => {
+
+      expect(response.statusCode).toBe(200);
+    })
+   
+    
+});
+
+
+test("responds json object {name : john}", done => {
   request(app)
   .get('/api/user')
   .then(response => {

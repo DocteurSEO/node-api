@@ -15,6 +15,12 @@ router.get('/', function(req, res) {
   //res.status(200).json(trolotlotlolos);
 });
 
+router.post('/add', function(req, res) {
+  // const result = req.body
+  // res.status(200).json({somme:result});
+});
+
+
 
 
 
